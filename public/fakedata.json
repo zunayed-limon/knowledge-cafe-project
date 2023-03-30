@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1715549551,
+        "author_name": "John Doe",
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkklACiUdYaRvy5KZKRTUCoO6uREH8UnxTSErjow9gRJqJHl2-q8jeZsGDW2UJ7hLqs6E&usqp=CAU",
+        "blog_cover_images": "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.2.1859306041.1680197564&semt=sph",
+        "blog_title": "How to get your first job as a self-taught programmer?"
+    },
+    {
+        "id": 1715549552,
+        "author_name": "Michael Jackson",
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkklACiUdYaRvy5KZKRTUCoO6uREH8UnxTSErjow9gRJqJHl2-q8jeZsGDW2UJ7hLqs6E&usqp=CAU",
+        "blog_cover_images": "https://img.freepik.com/free-photo/coding-man_1098-18084.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.2.1859306041.1680197564&semt=sph",
+        "blog_title": "How to get sixty out of sixty in this assignment eight?"
+    },
+    {
+        "id": 1715549553,
+        "author_name": "Larry Page",
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkklACiUdYaRvy5KZKRTUCoO6uREH8UnxTSErjow9gRJqJHl2-q8jeZsGDW2UJ7hLqs6E&usqp=CAU",
+        "blog_cover_images": "https://img.freepik.com/free-vector/robot-human_53876-90440.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.1.1859306041.1680197564&semt=sph",
+        "blog_title": "How do you calculate the number of vowels and consonants in a String?"
+    },
+    {
+        "id": 1715549554,
+        "author_name": "Obaidul Quader",
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkklACiUdYaRvy5KZKRTUCoO6uREH8UnxTSErjow9gRJqJHl2-q8jeZsGDW2UJ7hLqs6E&usqp=CAU",
+        "blog_cover_images": "https://img.freepik.com/free-photo/programmer-scanning-screen-his-smartwatch-with-smartphone-camera_1098-18710.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.1.1859306041.1680197564&semt=sph",
+        "blog_title": "Name different types of errors which can occur during the execution of a program?"
+    }
+]
