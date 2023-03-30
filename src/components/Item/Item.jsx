@@ -5,21 +5,31 @@ const Item = (props) => {
   const { author_name, author_image, blog_cover_images, blog_title } =
     props.item;
   return (
-    <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
+
+    <div className="">
+
+
+      <div className="bg-base-100 w-4/5 mt-10 lg:ms-40 mx-auto">
         <figure>
-          <img src={blog_cover_images} alt="Shoes" />
+          <img
+            draggable="false"
+            className=" my-4 rounded-lg"
+            src={blog_cover_images}
+            alt="Shoes"
+          />
         </figure>
-        <div className="card-body">
+        <div className="">
           <h2 className="card-title">{blog_title}</h2>
         </div>
       </div>
 
-      <div>
-        
+      <div className="lg:me-40">       
+        <div className="border border-neutral-500">limon </div>
+        <div></div>
       </div>
+
+
     </div>
-    
   );
 };
 
