@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="mx-10 mt-3">
-            <div className="navbar bg-base-100 ">
+        <div className=" mx-10 mt-3 ">
+            <div className="navbar bg-base-100">
   <div className="flex-1">
     <a className="normal-case text-2xl lg:text-3xl  font-semibold">Knowledge Cafe</a>
   </div>
