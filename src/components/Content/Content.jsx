@@ -16,7 +16,7 @@ useEffect(()=>{
     return (
         <div>
 
-          <div className='lg:flex lg:mx-40 justify-between'>
+          <div className='lg:flex lg:mx-24 justify-between'>
 
             <div className='card-container'>
                {
