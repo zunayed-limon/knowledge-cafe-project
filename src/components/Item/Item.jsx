@@ -5,9 +5,9 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 const Item = (props) => {
   // console.log(props.item);
   const { author_name, author_image, blog_cover_images, blog_title } = props.item;
-  
+
   return (
-    <div className="flex">
+    <div className="flex mx-5 lg:mx-auto">
       <div className="bg-base-100  mt-10 lg:ms-40 mx-auto">
         <figure>
           <img
