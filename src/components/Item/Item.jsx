@@ -7,8 +7,10 @@ const Item = (props) => {
   const { author_name, author_image, blog_cover_images, blog_title } = props.item;
 
   return (
-    <div className="flex mx-5 lg:mx-auto">
-      <div className="bg-base-100  mt-10 lg:ms-40 mx-auto">
+    <div className="mx-5 lg:mx-auto">
+
+{/* left side */}
+      <div  className="bg-base-100 mx-auto mt-10">
         <figure>
           <img
             draggable="false"
@@ -60,8 +62,13 @@ const Item = (props) => {
           <p className="mt-3 underline text-blue-600">Mark as read</p>
         </div>
       </div>
+
+
+
     </div>
   );
 };
 
 export default Item;
+
+
