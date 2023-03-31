@@ -30,7 +30,7 @@ const Item = (props) => {
               srcset=""
             />
             <div>
-              <p style={{ fontSize: "16px" }} className="font-bold">
+              <p style={{ fontSize: "17px" }} className="font-bold">
                 {author_name}
               </p>
               <p style={{ fontSize: "4px !important" }}>
