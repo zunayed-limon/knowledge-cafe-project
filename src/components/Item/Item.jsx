@@ -7,7 +7,7 @@ const Item = (props) => {
   const { author_name, author_image, blog_cover_images, blog_title , read_time} = props.item;
 
   return (
-    <div className="mx-5 lg:mx-auto">
+    <div className="mx-5 lg:mx-auto mb-14">
 
 {/* left side */}
       <div  className="bg-base-100 mx-auto mt-10">
@@ -51,15 +51,15 @@ const Item = (props) => {
         <div className="">
           <h2
             style={{ userSelect: "none", fontSize: "20px" }}
-            className="card-title mt-4"
+            className="card-title mt-3"
           >
             {blog_title}
           </h2>
         </div>
 
-        <div className="mt-3">
+        <div className="mt-1">
           <p>#programming #beginners</p>
-          <p className="mt-3 underline text-blue-600">Mark as read</p>
+          <p className="mt-1 underline text-blue-600">Mark as read</p>
         </div>
       </div>
 
