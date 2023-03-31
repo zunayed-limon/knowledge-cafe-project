@@ -2,33 +2,33 @@
     {
         "id": 1715549551,
         "author_name": "Elon Musk",
-        
+        "read_time": 10,
         "blog_cover_images": "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.2.1859306041.1680197564&semt=sph",
         "blog_title": "How to get your first job as a self-taught programmer?",
-        "author_image": "/src/images/pj-go-arPZr6tqsoA-unsplash-modified.png"
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOCMlxTE65D9_1Ifz0R1jpn60JQ4XVXKv-w&usqp=CAU"
     },
     {
         "id": 1715549552,
         "author_name": "Michael Jackson",
-    
+        "read_time": 14,
         "blog_cover_images": "https://img.freepik.com/free-photo/coding-man_1098-18084.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.2.1859306041.1680197564&semt=sph",
         "blog_title": "How to get sixty out of sixty in this assignment eight?",
-        "author_image": "/src/images/gian-paolo-aliatis-ASF3OD0FoyU-unsplash-modified.png"
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWNTiq9IDokwKAKD68rWcfvb_790X2MOxIA&usqp=CAU"
     },
     {
         "id": 1715549553,
         "author_name": "Larry Page",
-        
+        "read_time": 9,
         "blog_cover_images": "https://img.freepik.com/free-vector/robot-human_53876-90440.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.1.1859306041.1680197564&semt=sph",
         "blog_title": "How do you calculate the number of vowels and consonants in a String?",
-        "author_image": "/src/images/pylyp-sukhenko-SrsIBiJPpxs-unsplash-modified.png"
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxMkvJcCQ4f3SBVDiiOS8W9WkZ1eni-_7BWA&usqp=CAU"
     },
     {
         "id": 1715549554,
         "author_name": "Obaidul Quader",
-        
+        "read_time": 8,
         "blog_cover_images": "https://img.freepik.com/free-photo/programmer-scanning-screen-his-smartwatch-with-smartphone-camera_1098-18710.jpg?size=626&ext=jpg&uid=R67527634&ga=GA1.1.1859306041.1680197564&semt=sph",
         "blog_title": "Name different types of errors which can occur during the execution of a program?",
-        "author_image": "/src/images/redd-f-eLOwnWvK9Fk-unsplash-modified.png"
+        "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1qn4oJZO3HCTebTRrvpHZ5P8FuWT33L_A3A&usqp=CAU"
     }
 ]

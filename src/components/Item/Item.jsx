@@ -4,7 +4,7 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Item = (props) => {
   // console.log(props.item);
-  const { author_name, author_image, blog_cover_images, blog_title } = props.item;
+  const { author_name, author_image, blog_cover_images, blog_title , read_time} = props.item;
 
   return (
     <div className="mx-5 lg:mx-auto">
@@ -41,7 +41,7 @@ const Item = (props) => {
 
           <div>
             <p>
-              05 min read
+              {read_time} min read
               <FontAwesomeIcon className="ms-3" icon={faBookmark} />
             </p>
           </div>

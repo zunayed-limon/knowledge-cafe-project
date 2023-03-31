@@ -12,7 +12,7 @@ const Header = () => {
     <div className="dropdown dropdown-end">
      
         <div className="rounded-full">
-          <img className='h-12' src="/src/images/pj-go-arPZr6tqsoA-unsplash-modified.png" />
+          <img className='h-14' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWNTiq9IDokwKAKD68rWcfvb_790X2MOxIA&usqp=CAU" />
         </div>
      
     </div>
