@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Item = (props) => {
   // console.log(props.item);
   const { author_name, author_image, blog_cover_images, blog_title , read_time} = props.item;
+  const handleTime = props.handleTime;
+ 
+  
+
+
+
+
 
   return (
     <div className="mx-5 lg:mx-auto mb-14">
@@ -26,8 +33,6 @@ const Item = (props) => {
             <img
               style={{ height: "50px", marginRight: "12px" }}
               src={author_image}
-              alt=""
-              srcset=""
             />
             <div>
               <p style={{ fontSize: "17px" }} className="font-bold">
@@ -44,9 +49,11 @@ const Item = (props) => {
               {read_time} min read 
             </p>
 
+              <button className="btn" onClick={()=>handleTime(props.item)}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
               </svg>
+              </button>
             
           </div>
         </div>
