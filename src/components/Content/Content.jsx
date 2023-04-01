@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Content = () => {
 
 const [data, setData] = useState([]);
-
 const [time, setTime] = useState(0);
+
 
 useEffect(()=>{
     fetch('fakedata.json')
@@ -14,23 +16,29 @@ useEffect(()=>{
 }, []);
 
 const handleTime = (item) =>{
-
-  // const time = item.read_time;
-  // const totalTime = time + newTime;
-  // console.log(time);
- 
-  // setTime(totalTime);
   const newTime = item.time;
   const totalTime= time + newTime;
   setTime(totalTime);
-  console.log(time, newTime, totalTime);
-  
-  
-
+  // console.log(time, newTime, totalTime);
 };
 
+const [blog, setBlog] = useState([]);
 
-    return (
+const bookmarksBtn = (item) =>{
+  const newBlog = item.blog_title;
+  // const totalBlog = blog + newBlog;
+
+  if (blog.includes(newBlog)){
+    toast.error('Already bookmarked!', {
+      position: toast.POSITION.TOP_RIGHT, autoClose: 2000});
+    }
+  else{
+    const updatedBlog = [...blog, newBlog];
+    setBlog(updatedBlog);
+  }
+  }
+
+ return (
         <div>
 
           <div className='lg:flex lg:mx-24 justify-between'>
@@ -41,23 +49,30 @@ const handleTime = (item) =>{
                 key={item.id}
                 item={item}
                 handleTime={handleTime}
-                
-            ></Item>
+                bookmarksBtn = {bookmarksBtn}
+                ></Item>
                 )
               }
             </div>
-
             <div className="mt-14 lg:mt-10 mb-10" >
-
+                
           <div className='border border-blue-600 rounded mx-auto w-72 h-11 flex justify-center items-center'>
-            <p className='text-blue-600 font-semibold text-lg mx-auto'>Spent time on read: {time}</p>
+            <p className='text-blue-600 font-semibold text-lg mx-auto'>Spent time on read: {time} min</p>
           </div>
 
-          <div  className='border rounded  border-slate-300 mt-4 mx-auto w-72 h-full flex justify-center items-start'>
-            <p className="mt-3 font-bold text-lg mb-3">Bookmarked Blogs: {} </p>
+          <div className='border rounded border-slate-300 mt-4 mx-auto w-72 h-full'>
+            <p className="mt-3 font-bold text-lg mb-1 flex justify-center items-start">Bookmarked Blogs: {blog.length}</p><br/>
+            <div className='flex flex-wrap px-2 justify-center items-start'>
+               {blog.map((blog, index) => (
+            <p key={index} className=' mb-4'>{index+1}. {blog}</p>
+            ))}
+            </div>
           </div>
 
             </div>
+
+
+
 
           </div>
 
