@@ -47,8 +47,8 @@ const Item = (props) => {
             </div>
           </div>
 
-          <div className="flex">
-            <p className="me-3">
+          <div className="flex justify-center items-center">
+            <p className="me-2 text-xs">
               {time} min read 
             </p>
 
