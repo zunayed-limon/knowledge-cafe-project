@@ -4,8 +4,9 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Item = (props) => {
   // console.log(props.item);
-  const { author_name, author_image, blog_cover_images, blog_title , read_time} = props.item;
+  const { author_name, author_image, blog_cover_images, blog_title , time} = props.item;
   const handleTime = props.handleTime;
+  // console.log(handleTime)
  
   
 
@@ -46,10 +47,10 @@ const Item = (props) => {
 
           <div className="flex">
             <p className="me-3">
-              {read_time} min read 
+              {time} min read 
             </p>
 
-              <button className="btn" onClick={()=>handleTime(props.item)}>
+              <button>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
               </svg>
@@ -70,7 +71,7 @@ const Item = (props) => {
 
         <div className="mt-1">
           <p>#programming #beginners</p>
-          <p className="mt-1 underline text-blue-600">Mark as read</p>
+          <button  onClick={()=>handleTime(props.item)} className="mt-1 underline text-blue-600  hover:bg-slate-300 p-0.5 rounded" style={{backgroundColor: "slate"}}>Mark as read</button>
         </div>
       </div>
 

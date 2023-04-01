@@ -5,7 +5,7 @@ const Content = () => {
 
 const [data, setData] = useState([]);
 
-// const [time, setTime] = useState([]);
+const [time, setTime] = useState(0);
 
 useEffect(()=>{
     fetch('fakedata.json')
@@ -20,6 +20,12 @@ const handleTime = (item) =>{
   // console.log(time);
  
   // setTime(totalTime);
+  const newTime = item.time;
+  const totalTime= time + newTime;
+  setTime(totalTime);
+  console.log(time, newTime, totalTime);
+  
+  
 
 };
 
@@ -44,7 +50,7 @@ const handleTime = (item) =>{
             <div className="mt-14 lg:mt-10 mb-10" >
 
           <div className='border border-blue-600 rounded mx-auto w-72 h-11 flex justify-center items-center'>
-            <p className='text-blue-600 font-semibold text-lg mx-auto'>Spent time on read: {} </p>
+            <p className='text-blue-600 font-semibold text-lg mx-auto'>Spent time on read: {time}</p>
           </div>
 
           <div  className='border rounded  border-slate-300 mt-4 mx-auto w-72 h-full flex justify-center items-start'>
@@ -54,7 +60,7 @@ const handleTime = (item) =>{
             </div>
 
           </div>
-{/* question */}
+
           <div className='mt-24 lg:mx-24'>
 <div className='text-center my-8 bg-slate-300 py-8 rounded mx-5'>
 <p className='font-semibold text-2xl'>Question: What is the difference between props and state?</p>
@@ -76,7 +82,7 @@ const handleTime = (item) =>{
 <p className='mt-3 text-lg'>Answer: ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering code.</p>
 </div>
           </div>
-{/* footer  */}
+
           <p className='text-center my-10 text-xs'>© 2023 Knowledge Cafe | Made by <span className='text-blue-600'>Zunayed Limon</span> </p> 
         </div>
     );
