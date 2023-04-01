@@ -17,10 +17,10 @@ const Item = (props) => {
 
 
   return (
-    <div className="mx-5 lg:mx-auto mb-14">
+    <div className="mx-5 lg:mx-auto mb-4">
 
 {/* left side */}
-      <div  className="bg-base-100 mx-auto mt-10">
+      <div  className=" mx-auto mt-10 bg-zinc-200 shadow-lg shadow-zinc-500/50 lg:p-4 p-2 rounded-lg">
         <figure>
           <img
             draggable="false"
@@ -31,9 +31,10 @@ const Item = (props) => {
           />
         </figure>
 
-        <div className="flex justify-between" style={{ alignItems: "center" }}>
-          <div className="flex " style={{ alignItems: "center" }}>
+        <div className="flex justify-between items-center">
+          <div className="flex items-center" >
             <img
+            className=" rounded-full"
               style={{ height: "50px", marginRight: "12px" }}
               src={author_image}
             />
@@ -77,7 +78,7 @@ const Item = (props) => {
           <p className="text-xs">#programming #beginners</p>
           <button  onClick={()=>handleTime(props.item)} className="mt-2 underline text-blue-600  hover:bg-zinc-300 p-0.5 rounded" style={{backgroundColor: "slate"}}>Mark as read</button>
         </div>
-        <hr className="mt-5 h-0.5"/>
+        {/* <hr className="mt-5 h-0.5"/> */}
       </div>
 
 
