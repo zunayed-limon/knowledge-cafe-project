@@ -38,10 +38,10 @@ const Item = (props) => {
               src={author_image}
             />
             <div>
-              <p style={{ fontSize: "17px" }} className="font-bold">
+              <p style={{ fontSize: "17px" }} className="font-semibold mb-1">
                 {author_name}
               </p>
-              <p style={{ fontSize: "4px !important" }}>
+              <p className="text-xs">
                 March 14 (4 days ago)
               </p>
             </div>
@@ -49,7 +49,7 @@ const Item = (props) => {
 
           <div className="flex justify-center items-center">
             <p className="me-2 text-xs">
-              {time} min read 
+             {time} min read 
             </p>
 
               
@@ -73,9 +73,9 @@ const Item = (props) => {
           </h2>
         </div>
 
-        <div className="mt-1">
-          <p>#programming #beginners</p>
-          <button  onClick={()=>handleTime(props.item)} className="mt-1 underline text-blue-600  hover:bg-zinc-300 p-0.5 rounded" style={{backgroundColor: "slate"}}>Mark as read</button>
+        <div className="mt-2">
+          <p className="text-xs">#programming #beginners</p>
+          <button  onClick={()=>handleTime(props.item)} className="mt-2 underline text-blue-600  hover:bg-zinc-300 p-0.5 rounded" style={{backgroundColor: "slate"}}>Mark as read</button>
         </div>
         <hr className="mt-5 h-0.5"/>
       </div>
