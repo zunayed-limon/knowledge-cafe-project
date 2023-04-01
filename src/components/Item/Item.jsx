@@ -17,15 +17,15 @@ const Item = (props) => {
 
 
   return (
-    <div className="mx-5 lg:mx-auto mb-4">
+    <div className="mx-5 lg:mx-auto mt-10 mb-4">
 
 {/* left side */}
-      <div  className=" mx-auto mt-10 bg-zinc-200 shadow-lg shadow-zinc-500/50 lg:p-4 p-2 rounded-lg">
+      <div  className=" mx-auto lg:p-5 bg-zinc-200 shadow-lg shadow-zinc-500/50  p-2 rounded-lg">
         <figure>
           <img
             draggable="false"
             style={{ width: "755px" }}
-            className=" my-4 me-0 rounded-lg"
+            className="mb-4 me-0 rounded-lg"
             src={blog_cover_images}
             alt="Shoes"
           />
