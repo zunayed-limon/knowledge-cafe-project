@@ -38,7 +38,7 @@ const Item = (props) => {
               src={author_image}
             />
             <div>
-              <p style={{ fontSize: "17px" }} className="font-semibold mb-1">
+              <p style={{ fontSize: "17px" }} className="font-semibold mb-0.5">
                 {author_name}
               </p>
               <p className="text-xs">

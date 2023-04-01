@@ -77,22 +77,22 @@ const bookmarksBtn = (item) =>{
           </div>
 
           <div className='mt-24 lg:mx-24'>
-<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5'>
+<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5 px-3'>
 <p className='font-semibold text-2xl'>Question: What is the difference between props and state?</p>
 <p className='mt-3 text-lg'>Answer: Props are passed from parent to child components and are read-only, while state is an internal data store of a component that can be changed.</p>
 </div>
 
-<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5'>
+<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5 px-3'>
 <p className='font-semibold text-2xl'>Question: How does useState work?</p>
 <p className='mt-3 text-lg'>Answer: The React useState Hook allows us to track state in a function component.State generally refers to data or properties that need to be tracking in an application.</p>
 </div>
 
-<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5'>
+<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5 px-3'>
 <p className='font-semibold text-2xl'>Question: Purpose of useEffect other than fetching data!</p>
 <p className='mt-3 text-lg'>Answer: The useEffect in react js allows to perform side effects of components. The react useEffect examples of side effects include retrieving data, direct DOM updates, and timers.</p>
 </div>
 
-<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5'>
+<div className='text-center my-8 bg-slate-300 py-8 rounded mx-5 px-3'>
 <p className='font-semibold text-2xl'>Question: How Does React work?</p>
 <p className='mt-3 text-lg'>Answer: ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering code.</p>
 </div>
